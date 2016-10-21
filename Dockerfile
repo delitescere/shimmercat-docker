@@ -8,8 +8,7 @@ RUN \
 ADD bin/* /usr/local/bin/
 ADD lib/* /usr/local/lib/
 
-EXPOSE 443
 VOLUME ["/srv/www/"]
 WORKDIR /srv/www
 ENTRYPOINT ["shimmercat"]
-CMD ["devlove"]
+CMD ["devlove", "--listen", "0.0.0.0:4043"]

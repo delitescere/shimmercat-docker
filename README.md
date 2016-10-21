@@ -1,4 +1,4 @@
 
-To run:
+To run the default in "devlove" mode:
 
-`docker run --rm --volume $PWD:/srv/www -p 443:443 shimmercat devlove --listen 0.0.0.0:443`
+`docker run --rm --volume $PWD:/srv/www -p 443:4043 shimmercat`
